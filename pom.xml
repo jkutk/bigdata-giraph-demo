@@ -25,19 +25,26 @@
 		<dependency>
 			<groupId>org.apache.giraph</groupId>
 			<artifactId>giraph-core</artifactId>
-			<version>1.0.0</version>
+			<version>1.1.0-hadoop2</version>
 		</dependency>
 		<!-- Basic Hadoop Dependency which allows us to talk to a Hadoop service -->
 		<dependency>
 			<groupId>org.apache.hadoop</groupId>
 			<artifactId>hadoop-mapreduce-client-core</artifactId>
-			<version>2.5.1</version>
+			<version>2.4.0</version>
 		</dependency>
 		<!-- Hadoop Common pulls in some useful helpers -->
 		<dependency>
 			<groupId>org.apache.hadoop</groupId>
 			<artifactId>hadoop-common</artifactId>
-			<version>2.5.1</version>
+			<version>2.4.0</version>
+		</dependency>
+		<dependency>
+    		<groupId>jdk.tools</groupId>
+    		<artifactId>jdk.tools</artifactId>
+    		<scope>system</scope>
+    		<version>1.7</version>
+    		<systemPath>${JAVA_HOME}/lib/tools.jar</systemPath>
 		</dependency>		
 	</dependencies>
 	
